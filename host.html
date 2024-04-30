@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ashleigh Pote Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta content="initial-scale=1, maximum-scale=1" name="viewport" />
+    <meta property="og:title" content="Ashleigh Pote" />
+    <meta
+      property="og:description"
+      content="Ashleigh Pote is a designer and creative developer based in Cape Town, South Africa"
+    />
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <!---- Links ---->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/project.css" rel="stylesheet" type="text/css" />
+    <link href="css/mediaqueries.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ozi8maq.css" />
+    <!---- Gopher ---->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!---- Master Scroll Style ---->
+    <!---- Open Sans ---->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <div>
+            <li><a href="/index.html">Ashleigh Pote</a></li>
+            <li class="email-mobile">ashleigh@potedesign.co.za</li>
+            <div class="tooltip email-desktop">
+              <button
+                id="desktop-email-btn"
+                onclick="copyFunctionDesktop()"
+                onmouseout="outFunctionDesktop()"
+              >
+                <span
+                  id="myTooltip"
+                  class="tooltiptextHeader email-link email-desktop"
+                >
+                  Copy to clipboard
+                </span>
+                <input
+                  type="text"
+                  value="ashleigh@potedesign.co.za"
+                  id="myInput"
+                  readonly
+                />
+              </button>
+            </div>
+
+            <!-- mobile copy to clipboard function -->
+            <button
+              id="myBtn"
+              class="email-responsive"
+              onclick="copyFunctionMobile()"
+            >
+              <div class="mobile-email-container">
+                <input type="text" value="Email" id="myInput-Mobile" readonly />
+              </div>
+            </button>
+
+            <!-- mobile tooltip -->
+            <div id="mobile-tooltip">
+              <span id="myTooltip" lass="tooltiptext email-link email-desktop">
+                <p>Email<br />Copied</p>
+              </span>
+            </div>
+          </div>
+          <div>
+            <li><a href="/projects.html">Projects</a></li>
+            <li>
+              <a href="https://github.com/ash-pote" target="_blank">Github</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="project_header">
+        <h3 class="project_header_text">
+          Interning for
+          <span class="green-highlighter"
+            ><a href="https://theother.co.za/" target="_blank"
+              >The Other</a
+            ></span
+          >
+          I created a poster to invite hosts to submit an application for The
+          Other Radio.
+        </h3>
+        <div class="subText">
+          <div class="subText_rowOne">
+            <ul>
+              <li>Design</li>
+              <li>Figma</li>
+              <li>Development</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="subText_rowTwo">
+            <h5>
+              Using The Others posters as inspiration and the lead designers
+              moodboard, I created a poster that reflected the company's brand
+              and style.
+            </h5>
+          </div>
+        </div>
+      </section>
+      <section class="project">
+        <div class="row">
+          <div class="column one">
+            <img
+              src="/img/the_other_submission.png"
+              alt="Green poster with geometric white elements and text, promotion a radio show"
+            />
+          </div>
+          <div class="column two"></div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer-email">
+      <h3 id="email-mobile-footer">ashleigh@potedesign.co.za</h3>
+      <div
+        id="tooltip-footer-container"
+        class="tooltip email-desktop tooltip-footer"
+      >
+        <button
+          id="desktop-email-footer-btn"
+          onclick="copyFunctionFooter()"
+          onmouseout="outFunctionFooter()"
+        >
+          <span
+            class="tooltiptext-footer email-link email-desktop"
+            id="myTooltip-footer"
+            >Copy to clipboard</span
+          >
+          <input
+            type="text"
+            value="ashleigh@potedesign.co.za"
+            id="myInput-footer"
+            readonly
+          />
+        </button>
+      </div>
+
+      <a id="footer-email-link" href="mailto:ashleigh@potedesign.co.za"
+        ><h4>ashleigh@potedesign.co.za</h4></a
+      >
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ashleigh-pote-4a5402161/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in" href=""></i
+        ></a>
+        <a href="https://github.com/ash-pote" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!---- Font Awesome ---->
+    <script
+      src="https://kit.fontawesome.com/ec7abe9590.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main js -->
+    <script src="/main.js"></script>
+  </body>
+</html>

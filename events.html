@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ashleigh Pote Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta content="initial-scale=1, maximum-scale=1" name="viewport" />
+    <meta property="og:title" content="Ashleigh Pote" />
+    <meta
+      property="og:description"
+      content="Ashleigh Pote is a designer and creative developer based in Cape Town, South Africa"
+    />
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <!---- Links ---->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/project.css" rel="stylesheet" type="text/css" />
+    <link href="css/mediaqueries.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ozi8maq.css" />
+    <!---- Gopher ---->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!---- Master Scroll Style ---->
+    <!---- Open Sans ---->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <div>
+            <li><a href="/index.html">Ashleigh Pote</a></li>
+            <div class="tooltip email-desktop">
+              <button
+                id="desktop-email-btn"
+                onclick="copyFunctionDesktop()"
+                onmouseout="outFunctionDesktop()"
+              >
+                <span
+                  id="myTooltip"
+                  class="tooltiptextHeader email-link email-desktop"
+                >
+                  Copy to clipboard
+                </span>
+                <input
+                  type="text"
+                  value="ashleigh@potedesign.co.za"
+                  id="myInput"
+                  readonly
+                />
+              </button>
+            </div>
+
+            <!-- mobile copy to clipboard function -->
+            <button
+              id="myBtn"
+              class="email-responsive"
+              onclick="copyFunctionMobile()"
+            >
+              <div class="mobile-email-container">
+                <input type="text" value="Email" id="myInput-Mobile" readonly />
+              </div>
+            </button>
+
+            <!-- mobile tooltip -->
+            <div id="mobile-tooltip">
+              <span id="myTooltip" lass="tooltiptext email-link email-desktop">
+                <p>Email<br />Copied</p>
+              </span>
+            </div>
+          </div>
+          <div>
+            <li><a href="/projects.html">Projects</a></li>
+            <li>
+              <a href="https://github.com/ash-pote" target="_blank">Github</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <section class="project_header">
+          <h3 class="project_header_text">
+            I designed and developed a Next.js site to explore the framework and
+            implement interactivtiy with React Three Fiber.
+          </h3>
+          <div class="subText">
+            <div class="subText_rowOne">
+              <ul>
+                <li>Blender</li>
+                <li>Design</li>
+                <li>Development</li>
+              </ul>
+            </div>
+            <div class="subText_rowTwo">
+              <h5>
+                The site also implemented
+                <span class="green-highlighter"
+                  ><a href="https://www.sanity.io/" target="_blank"
+                    >Sanity.io</a
+                  ></span
+                >
+                and
+                <span class="green-highlighter"
+                  ><a href="https://hasura.io/" target="_blank">Hasura</a></span
+                >
+                for the backend, "like" and passwordless login functionality,
+                and a custom 3D animated model using
+                <span class="green-highlighter"
+                  ><a href="https://www.blender.org/" target="_blank"
+                    >Blender</a
+                  ></span
+                >. View it
+                <span class="green-highlighter"
+                  ><a
+                    href="https://animation-events.vercel.app/"
+                    target="_blank"
+                    >here</a
+                  ></span
+                >.
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section class="project">
+          <div class="row">
+            <div class="column one">
+              <a href="https://animation-events.vercel.app/" target="_blank"
+                ><img src="/img/events.gif" alt="Website with animated 3d Fan"
+              /></a>
+            </div>
+            <div class="column two"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer id="footer-email">
+      <div
+        id="tooltip-footer-container"
+        class="tooltip email-desktop tooltip-footer"
+      >
+        <button
+          id="desktop-email-footer-btn"
+          onclick="copyFunctionFooter()"
+          onmouseout="outFunctionFooter()"
+        >
+          <span
+            class="tooltiptext-footer email-link email-desktop"
+            id="myTooltip-footer"
+            >Copy to clipboard</span
+          >
+          <input
+            type="text"
+            value="ashleigh@potedesign.co.za"
+            id="myInput-footer"
+            readonly
+          />
+        </button>
+      </div>
+
+      <a id="footer-email-link" href="mailto:ashleigh@potedesign.co.za"
+        ><h4>ashleigh@potedesign.co.za</h4></a
+      >
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ashleigh-pote-4a5402161/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in" href=""></i
+        ></a>
+        <a href="https://github.com/ash-pote" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!---- Font Awesome ---->
+    <script
+      src="https://kit.fontawesome.com/ec7abe9590.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main js -->
+
+    <script src="/script.js"></script>
+  </body>
+</html>

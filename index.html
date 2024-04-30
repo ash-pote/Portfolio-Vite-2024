@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ashleigh Pote Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta content="initial-scale=1, maximum-scale=1" name="viewport" />
+    <meta property="og:title" content="Ashleigh Pote" />
+    <meta
+      property="og:description"
+      content="Ashleigh Pote is a designer and creative developer based in Cape Town, South Africa"
+    />
+    <meta property="og:image" content="/img/preview.png" />
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <!---- Links ---->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/mediaqueries.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ozi8maq.css" />
+    <!---- Gopher ---->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!---- Master Scroll Style ---->
+    <!---- Open Sans ---->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <div>
+            <li>Ashleigh Pote</li>
+            <li class="email-mobile">ashleigh@potedesign.co.za</li>
+
+            <div class="tooltip email-desktop">
+              <button
+                id="desktop-email-btn"
+                onclick="copyFunctionDesktop()"
+                onmouseout="outFunctionDesktop()"
+              >
+                <span
+                  id="myTooltip"
+                  class="tooltiptextHeader email-link email-desktop"
+                >
+                  Copy to clipboard
+                </span>
+                <input
+                  type="text"
+                  value="ashleigh@potedesign.co.za"
+                  id="myInput"
+                  readonly
+                />
+              </button>
+            </div>
+
+            <!-- mobile copy to clipboard function -->
+            <button
+              id="myBtn"
+              class="email-responsive"
+              onclick="copyFunctionMobile()"
+            >
+              <div class="mobile-email-container">
+                <input type="text" value="Email" id="myInput-Mobile" readonly />
+              </div>
+            </button>
+
+            <!-- mobile tooltip -->
+            <div id="mobile-tooltip">
+              <span id="myTooltip" lass="tooltiptext email-link email-desktop">
+                <p>Email<br />Copied</p>
+              </span>
+            </div>
+          </div>
+          <div class="right_nav">
+            <div>
+              <li><a class="nav_link" href="/projects.html">Projects</a></li>
+              <li>
+                <a href="https://github.com/ash-pote" target="_blank">Github</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="scene-container"></div>
+      <!-- For Texture Grain -->
+      <canvas id="texture_canvas"></canvas>
+      <section id="hero-unset">
+        <div id="hero">
+          <div class="hero-text-container">
+            <div class="hero-text">
+              <h1>
+                I’m Ashleigh: a designer and creative developer based in Cape
+                Town, South Africa. I
+                <span class="green-highlighter"><a>studied art</a></span>
+                and focus on making
+                <span class="green-highlighter"><a>animated</a></span
+                >, <span class="green-highlighter"><a>interactive</a></span> and
+                <span class="green-highlighter"><a>design-based</a></span>
+                websites.
+              </h1>
+            </div>
+            <button class="btn-projects">
+              <a href="/projects.html">See Work</a>
+            </button>
+          </div>
+
+          <div class="down-arrow">
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+      </section>
+      <div id="arrow_container">
+        <div class="arrow-box"></div>
+      </div>
+      <section id="body-projects-ui">
+        <div class="ui-big-container trigger-up">
+          <div class="user-interface-img-container1 ui-img card">
+            <img
+              src="img/the_other.png"
+              alt="poster design for the other records using illustrations on orange background"
+            />
+          </div>
+          <div class="user-interface-img-container2 ui-img card">
+            <img
+              src="img/Wave_Festival_01.png"
+              alt="poster design for wave festival made using illustrations"
+            />
+          </div>
+          <div class="user-interface-img-container3 ui-img">
+            <img
+              src="img/Wave_Festival_02.png"
+              alt="poster design for wave festival made using illustrations"
+            />
+          </div>
+        </div>
+        <div
+          class="user-interface-text-container"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="1000"
+        >
+          <h3>Digital Design</h3>
+          <p class="ui-text">
+            Using Figma I make digital projects based on accessible web
+            typography, colour and grids. Previously I've worked on music social
+            media content and interactive, animated websites.
+          </p>
+        </div>
+      </section>
+
+      <section id="body-projects-frontend">
+        <div
+          class="frontend-text-container"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="1000"
+        >
+          <h3>Creative Development</h3>
+          <p>
+            I really like making projects with code and have experience in
+            Frontend development to build design based projects written with
+            logical, clean CSS and Javascript. I’m currently working with
+            three.js, shaders, GSAP, and D3.
+          </p>
+        </div>
+        <div class="frontend-big-container">
+          <div class="frontend-img-container1 frontend-img card">
+            <a href="https://useless.ashleighpote.co.za/" target="_blank">
+              <img
+                src="img/kayleigh.gif"
+                alt="a gif of a photographers website with images that can be moved with cursor"
+              />
+            </a>
+          </div>
+          <div class="frontend-img-container2 frontend-img card">
+            <a href="https://useless.ashleighpote.co.za/" target="_blank">
+              <img
+                src="img/useless.gif"
+                alt="a gif of an illustrated website being interacted with"
+              />
+            </a>
+          </div>
+          <div class="frontend-img-container3 frontend-img">
+            <a href="https://useless.ashleighpote.co.za/" target="_blank">
+              <img
+                src="img/webgl.gif"
+                alt="a gif of a webgl 3d computer with moving eyes"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Projects CTA Banner -->
+      <aside id="projects-cta-banner">
+        <div class="projects-cta">
+          <div>
+            <h2>VIEW ALL PROJECTS</h2>
+          </div>
+          <hr class="desktop-cta-line" />
+          <button
+            id="projects-cta-btn"
+            class="archive btn"
+            id="toggle"
+            onclick="menuToggle();"
+          >
+            PROJECTS ARCHIVE
+          </button>
+        </div>
+      </aside>
+
+      <!-- Home About Section -->
+      <section id="about">
+        <div
+          class="about-text"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          data-aos-delay="1000"
+        >
+          <h2>
+            Experienced as a frontend developer and digital designer, I focus on
+            building websites that are interactive, animated and based on
+            accessible code. Currently available for freelance and full time
+            work.
+          </h2>
+        </div>
+      </section>
+    </main>
+    <footer id="footer-email">
+      <h3 id="email-mobile-footer">ashleigh@potedesign.co.za</h3>
+      <div
+        id="tooltip-footer-container"
+        class="tooltip email-desktop tooltip-footer"
+      >
+        <button
+          id="desktop-email-footer-btn"
+          onclick="copyFunctionFooter()"
+          onmouseout="outFunctionFooter()"
+        >
+          <span
+            class="tooltiptext-footer email-link email-desktop"
+            id="myTooltip-footer"
+            >Copy to clipboard</span
+          >
+          <input
+            type="text"
+            value="ashleigh@potedesign.co.za"
+            id="myInput-footer"
+            readonly
+          />
+        </button>
+      </div>
+
+      <a id="footer-email-link" href="mailto:ashleigh@potedesign.co.za"
+        ><h3>ashleigh@potedesign.co.za</h3></a
+      >
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ashleigh-pote-4a5402161/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in" href=""></i
+        ></a>
+        <a href="https://github.com/ash-pote" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Scroll Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!---- Font Awesome ---->
+    <script
+      src="https://kit.fontawesome.com/ec7abe9590.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Main js -->
+    <script type="module" src="/script.js"></script>
+    <script src="/main.js"></script>
+
+    <!-- 3d js -->
+    <script src="/vert.js"></script>
+    <script src="/frag.js"></script>
+    <script type="module" src="/threed.js"></script>
+    <script type="module" src="/arrow.js"></script>
+  </body>
+</html>

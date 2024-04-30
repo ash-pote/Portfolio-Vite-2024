@@ -1,0 +1,244 @@
+/* Large Desktop Media Query */
+/* above 2100px */
+@media all and (min-width: 2100px) {
+  html {
+    font-size: 21px;
+  }
+
+  /* body Projects */
+  .user-interface-text-container,
+  .frontend-text-container {
+    padding: 0 80px;
+  }
+}
+
+/* Large Desktop Media Query */
+/* below 2100px */
+@media all and (max-width: 2100px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+/* above 1800px */
+@media all and (min-width: 1800px) {
+  html {
+    font-size: 21px;
+  }
+
+  #body-projects-ui,
+  #body-projects-frontend {
+    padding: 0 48px 0 48px;
+  }
+}
+
+/* below 1800px */
+@media all and (max-width: 1800px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Small Desktop Media Query */
+@media all and (max-width: 1290px) {
+  html {
+    font-size: 16px;
+  }
+
+  .projects_grid {
+    flex-direction: column;
+  }
+}
+
+/* Ipad Media Query */
+@media all and (max-width: 980px) and (orientation: landscape) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Ipad */
+@media all and (max-width: 1024px) {
+  .email-desktop {
+    display: none;
+  }
+  .email-mobile {
+    display: block;
+  }
+
+  #tooltip-footer-container {
+    display: none;
+  }
+
+  #email-mobile-footer {
+    display: block;
+  }
+}
+
+/* Ipad Media Query Portrait View */
+@media all and (max-width: 1024px) and (orientation: portrait) {
+  /* Body Projects */
+  #body-projects-ui,
+  #body-projects-frontend {
+    /* unsets grid */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #body-projects-frontend {
+    flex-direction: column-reverse;
+  }
+
+  .ui-big-container,
+  .frontend-big-container {
+    margin-bottom: 16px;
+  }
+  .user-interface-text-container,
+  .frontend-text-container {
+    margin-top: 16px;
+  }
+
+  .ui-big-container,
+  .frontend-big-container {
+    width: 60vw;
+  }
+
+  .user-interface-text-container {
+    width: 54vw;
+    margin-left: 0;
+  }
+
+  .ui-big-container,
+  .frontend-big-container {
+    margin-bottom: 0;
+  }
+
+  hr {
+    border: 1px solid #f6f4f4;
+    width: 20vw;
+    margin: 0 72px 0 72px;
+  }
+
+  /* footer */
+  footer {
+    height: 28vh;
+  }
+}
+
+/* Mobile Media Query Large */
+@media all and (max-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 0.8rem;
+  }
+
+  .ui-big-container,
+  .frontend-big-container {
+    width: 80vw;
+  }
+
+  .user-interface-text-container,
+  .frontend-text-container {
+    width: 70vw;
+  }
+
+  /* Pojects CTA Banner Mobile */
+  #projects-cta-banner {
+    justify-content: center;
+  }
+  .projects-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+  hr {
+    display: none;
+  }
+  #projects-cta-btn {
+    margin-top: 24px;
+  }
+
+  #projects-cta-banner {
+    height: 28vh;
+  }
+
+  /* projects */
+  .subText {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 0;
+  }
+  .subText_rowOne,
+  .subText_rowTwo {
+    width: 100vw;
+  }
+  .subText_rowOne {
+    padding-left: 16px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 8px;
+  }
+}
+
+/* Mobile Media Query Large */
+@media all and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  p {
+    line-height: 140%;
+  }
+
+  .frontend-text-container,
+  .user-interface-text-container {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Mobile Media Query Very Small */
+@media all and (max-width: 300px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 900px) and (orientation: landscape) {
+  html {
+    font-size: 10px;
+  }
+}

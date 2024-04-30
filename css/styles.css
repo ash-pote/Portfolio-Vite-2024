@@ -1,0 +1,442 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+.tooltip input {
+  text-decoration: none;
+  color: #251c2b;
+
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.tooltip-footer input {
+  text-decoration: none;
+  color: #fffafc;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+input {
+  padding: 0;
+}
+
+main {
+  z-index: 3000 !important;
+}
+
+img {
+  width: 100%;
+}
+
+/**********************************************************************/
+/* Arrow */
+#arrow_container {
+  position: fixed;
+
+  z-index: 100000;
+
+  bottom: 0;
+  right: 0;
+}
+
+.arrow-box {
+  width: 10vw;
+  height: 120px;
+  cursor: pointer;
+}
+
+/**********************************************************************/
+/* Texture background 
+Resource: https://codepen.io/zadvorsky/pen/PwyoMm 
+See js for animation */
+#texture_canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.display-none {
+  display: none;
+}
+
+/**********************************************************************/
+/* nav */
+/* email copy to clipboard */
+nav {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  padding: 16px 24px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.tooltip button {
+  border: transparent;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 120%;
+}
+.tooltip input,
+.nav_link {
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.tooltip ::selection {
+  color: none;
+  background: none;
+}
+.tooltip ::-moz-selection {
+  color: none;
+  background: none;
+}
+#myInput {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+input:focus {
+  outline: none;
+}
+.tooltip .tooltiptextHeader {
+  font-family: "Compagnon Roman";
+  font-weight: 300;
+  visibility: hidden;
+  width: 70%;
+  background-color: #403537;
+  color: #fdfcfc;
+  text-align: center;
+  border-radius: 6px;
+
+  padding: 8px 8px 9px 8px;
+  position: absolute;
+  z-index: 10;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptextHeader::after,
+.tooltip .tooltiptext-footer::after {
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+}
+.tooltip:hover .tooltiptextHeader,
+.tooltip:hover .tooltiptext-footer {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Header Tooltip */
+.tooltip .tooltiptextHeader {
+  top: 180%;
+  left: 50%;
+}
+.tooltip .tooltiptextHeader::after {
+  bottom: 100%;
+  left: 50%;
+  border-color: transparent transparent #362626 transparent;
+}
+
+.email-mobile {
+  display: none;
+}
+
+.right_nav {
+  display: flex;
+}
+
+/**********************************************************************/
+/* Hero */
+#scene-container {
+  z-index: 2;
+}
+#hero-unset {
+  z-index: 100;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  padding: 0 32px;
+  z-index: 200;
+}
+
+.hero-text h1 {
+  line-height: 130%;
+}
+
+.green-highlighter a {
+  background-color: #dbed72;
+  color: #705c60;
+}
+
+.down-arrow {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 16px;
+}
+
+.down-arrow i {
+  cursor: pointer;
+  font-size: 22px;
+  color: #251c2b;
+  transition: 1s ease;
+  animation: fadeIn 2s 2.5s both;
+}
+
+.down-arrow i:hover {
+  color: #705c60;
+  font-size: 20px;
+}
+
+#scene-container {
+  /* tell our scene container to take up the full page */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/**********************************************************************/
+/* Body Projects */
+#body-projects-ui,
+#body-projects-frontend {
+  background-color: #efebeb;
+  padding: 0 32px 0 32px;
+  height: 100vh;
+  z-index: 200;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-big-container,
+.frontend-big-container {
+  position: relative; /* for overlap */
+  width: 50vw;
+}
+
+.ui-big-container {
+  margin-right: 16px;
+}
+
+.user-interface-text-container {
+  width: 50vw;
+  margin-left: 16px;
+}
+
+.card {
+  position: absolute; /* every card but last one has .card class */
+}
+
+.ui-img,
+.frontend-img {
+  width: 100%;
+}
+
+.frontend-text-container {
+  width: 50vw;
+  margin-right: 16px;
+}
+
+/**********************************************************************/
+/* Pojects CTA Banner */
+#projects-cta-banner {
+  background-color: #503939;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 40px 0 40px;
+}
+.projects-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f6f4f4;
+}
+hr {
+  border: 1px solid #f6f4f4;
+  width: 40vw;
+  margin: 0 72px 0 72px;
+}
+.projects-cta h2 {
+  width: min-content; /* for accurate spacing */
+  text-align: center;
+}
+#projects-cta-btn {
+  color: #fffafc;
+  border: 1px solid #fffafc;
+  margin-top: unset;
+  background-color: transparent;
+}
+
+/**********************************************************************/
+/* About */
+#about {
+  background-color: #efebeb;
+  height: 100vh;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+/**********************************************************************/
+/* Footer */
+footer {
+  height: 32vh;
+  background-color: #362626;
+  color: #f6f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer a {
+  color: #f6f4f4;
+}
+footer i {
+  font-size: 26px;
+  margin-top: 24px;
+  transition: all 0.4s;
+  cursor: pointer;
+  color: #f6f4f4;
+}
+.fa-linkedin-in {
+  cursor: pointer;
+  margin-right: 8px;
+}
+.fa-github {
+  margin-left: 8px;
+}
+footer i:hover {
+  color: #dfd7d7;
+}
+
+.cursor-none a {
+  cursor: default;
+}
+
+#email-mobile-footer {
+  display: none;
+}
+
+/* Footer email copy to clipboard */
+#tooltip-footer-container {
+  display: block;
+}
+#footer-email-link {
+  display: none;
+}
+.tooltip .tooltiptext-footer {
+  bottom: -0.2em;
+  right: -14rem;
+}
+.tooltip .tooltiptext-footer::after {
+  top: 40%;
+  left: -2%;
+  border-color: transparent #f6f4f4 transparent transparent;
+}
+.tooltip-footer input {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  width: 110%;
+}
+
+#myInput-footer {
+  margin-right: 20px;
+}
+
+.tooltip .tooltiptext-footer {
+  font-family: "Compagnon Roman";
+  font-weight: 300;
+  visibility: hidden;
+  width: 100%;
+  background-color: #faf9f9;
+  color: #382e30;
+  text-align: center;
+  border-radius: 6px;
+
+  padding: 8px 8px 9px 8px;
+  position: absolute;
+  z-index: 10;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Mobile Tooltip */
+/* The alert message box */
+.email-responsive {
+  background-color: transparent;
+  width: 70px;
+  display: none;
+}
+#mobile-tooltip {
+  display: none;
+  margin-top: 26%;
+  left: 4vw;
+  padding: 4px 8px;
+  background-color: #362626;
+  color: #fffafc;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+#myInput-Mobile {
+  background-color: transparent;
+}
+
+/* little arrow on top of button */
+#mobile-tooltip::after {
+  content: "";
+  bottom: 100%;
+  position: absolute;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #f6f4f4 transparent;
+}

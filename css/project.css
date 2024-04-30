@@ -1,0 +1,55 @@
+.project_header_text {
+  font-weight: 200;
+}
+
+.project_header {
+  margin-top: 70px; /* 54px */
+  padding: 0 24px;
+}
+
+.subText {
+  display: flex;
+  padding: 8px 24px 0 24px;
+}
+.subText_rowOne,
+.subText_rowTwo {
+  width: 50vw;
+}
+
+.project {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 8px;
+}
+
+.one {
+  padding: 1px 8px 0 24px;
+}
+
+.two {
+  padding: 0 24px 0 8px;
+}
+
+.column img {
+  padding-bottom: 8px;
+}
+
+.project_info {
+  padding: 0 24px 40px 24px;
+  display: flex;
+}
+
+.column_one {
+  width: 50vw;
+}

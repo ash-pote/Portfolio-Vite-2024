@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ashleigh Pote Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta content="initial-scale=1, maximum-scale=1" name="viewport" />
+    <meta property="og:title" content="Ashleigh Pote" />
+    <meta
+      property="og:description"
+      content="Ashleigh Pote is a designer and creative developer based in Cape Town, South Africa"
+    />
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <!---- Links ---->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/projects.css" rel="stylesheet" type="text/css" />
+    <link href="css/mediaqueries.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ozi8maq.css" />
+    <!---- Gopher ---->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!---- Master Scroll Style ---->
+    <!---- Open Sans ---->
+  </head>
+  <body class="projects">
+    <header>
+      <nav>
+        <ul class="menu">
+          <div>
+            <li><a href="/index.html">Ashleigh Pote</a></li>
+            <li class="email-mobile">ashleigh@potedesign.co.za</li>
+            <div class="tooltip email-desktop">
+              <button
+                id="desktop-email-btn"
+                onclick="copyFunctionDesktop()"
+                onmouseout="outFunctionDesktop()"
+              >
+                <span
+                  id="myTooltip"
+                  class="tooltiptextHeader email-link email-desktop"
+                >
+                  Copy to clipboard
+                </span>
+                <input
+                  type="text"
+                  value="ashleigh@potedesign.co.za"
+                  id="myInput"
+                  readonly
+                />
+              </button>
+            </div>
+
+            <!-- mobile copy to clipboard function -->
+            <button
+              id="myBtn"
+              class="email-responsive"
+              onclick="copyFunctionMobile()"
+            >
+              <div class="mobile-email-container">
+                <input type="text" value="Email" id="myInput-Mobile" readonly />
+              </div>
+            </button>
+
+            <!-- mobile tooltip -->
+            <div id="mobile-tooltip">
+              <span id="myTooltip" lass="tooltiptext email-link email-desktop">
+                <p>Email<br />Copied</p>
+              </span>
+            </div>
+          </div>
+          <div>
+            <li><a href="/projects.html">Projects</a></li>
+            <li>About</li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="projects_grid">
+        <div class="row_one">
+          <div class="img">
+            <a href="/theOther.html"
+              ><img class="img_one" src="/img/the_other_project.png"
+            /></a>
+          </div>
+          <div class="img">
+            <a href="/kayleigh.html"
+              ><img class="img_two" src="/img/kayleigh.gif"
+            /></a>
+          </div>
+          <div class="img">
+            <a href="/heater.html"
+              ><img class="img_seven" src="/img/heater.gif"
+            /></a>
+          </div>
+        </div>
+        <div class="row_two">
+          <div class="img">
+            <a href="/waveFestival.html"
+              ><img class="img_three" src="/img/Wave_Festival_01.png"
+            /></a>
+          </div>
+          <div class="img">
+            <a href="useless.html"
+              ><img class="img_four" src="/img/useless.gif"
+            /></a>
+          </div>
+          <div class="img">
+            <a href="/events.html"
+              ><img class="img_eight" src="/img/events.gif"
+            /></a>
+          </div>
+        </div>
+        <div class="row_three">
+          <div class="img">
+            <a href="/webgl.html"
+              ><img class="img_five" src="/img/webgl.gif"
+            /></a>
+          </div>
+          <div class="img">
+            <a href="/host.html"
+              ><img class="img_six" src="/img/the_other_submission.png"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer-email">
+      <h3 id="email-mobile-footer">ashleigh@potedesign.co.za</h3>
+      <div
+        id="tooltip-footer-container"
+        class="tooltip email-desktop tooltip-footer"
+      >
+        <button
+          id="desktop-email-footer-btn"
+          onclick="copyFunctionFooter()"
+          onmouseout="outFunctionFooter()"
+        >
+          <span
+            class="tooltiptext-footer email-link email-desktop"
+            id="myTooltip-footer"
+            >Copy to clipboard</span
+          >
+          <input
+            type="text"
+            value="ashleigh@potedesign.co.za"
+            id="myInput-footer"
+            readonly
+          />
+        </button>
+      </div>
+
+      <a id="footer-email-link" href="mailto:ashleigh@potedesign.co.za"
+        ><h4>ashleigh@potedesign.co.za</h4></a
+      >
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ashleigh-pote-4a5402161/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in" href=""></i
+        ></a>
+        <a href="https://github.com/ash-pote" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!---- Font Awesome ---->
+    <script
+      src="https://kit.fontawesome.com/ec7abe9590.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main js -->
+
+    <script src="/main.js"></script>
+  </body>
+</html>

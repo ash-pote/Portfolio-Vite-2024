@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Compagnon Roman";
+  src: local("Compagnon Roman"), url("/Compagnon-Roman.woff2") format("woff2");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f6f4f4;
+  color: #382e30;
+}
+
+::selection {
+  background: #dbed72;
+}
+
+::-moz-selection {
+  background: #dbed72;
+  /* Gecko Browsers */
+}
+
+section img {
+  width: 100%;
+}
+
+/* Global Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: gopher, sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+.btn,
+#myTooltip-footer {
+  font-family: "Compagnon Roman";
+}
+
+h1 {
+  font-size: 2.9rem;
+}
+
+h2 {
+  font-size: 2.48rem;
+}
+
+h3 {
+  font-size: 2.07rem;
+}
+
+h4 {
+  font-size: 1.72rem;
+}
+
+h5 {
+  font-size: 1.44rem;
+}
+
+h6 #myInput-footer {
+  font-size: 1.2rem;
+}
+
+p,
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Buttons */
+.btn {
+  background-color: #403537;
+  color: #fdfcfc;
+  font-size: 1rem;
+  padding: 4px 8px 7px 8px;
+  border: none;
+  margin-top: 24px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.btn-projects {
+  font-family: "Compagnon Roman";
+  font-size: 1rem;
+  padding: 4px 8px 7px 8px;
+  background-color: #382e30;
+
+  margin-top: 24px;
+  border-radius: 2px;
+}
+
+.btn-projects a {
+  color: #f6f4f4;
+}
